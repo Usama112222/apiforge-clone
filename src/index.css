@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
+  --color-orange-950: #431407;
+}
+
+@layer base {
+  body {
+    background-color: white;
+    color: #111827;
+  }
+  
+  .dark body {
+    background-color: #111827;
+    color: white;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .shadow-soft-lg {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ============================================
+   DARK MODE OVERRIDES - ORANGE THEME
+   ============================================ */
+
+.dark {
+  color-scheme: dark;
+}
+
+/* --- Hero Section - Orange/Dark Purple --- */
+.dark .hero-section {
+  background: linear-gradient(to bottom, #0c0a1d, #1a0e1a, #0c0a1d) !important;
+}
+
+/* --- Hero Text Colors --- */
+.dark .hero-section .text-gray-900 {
+  color: #ffffff !important;
+}
+
+.dark .hero-section .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark .hero-section .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark .hero-section .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark .hero-section .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+/* --- Hero Borders --- */
+.dark .hero-section .border-gray-200 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .hero-section .border-gray-300 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark .hero-section .border-orange-200 {
+  border-color: rgba(251, 146, 60, 0.25) !important;
+}
+
+/* --- Hero Badge --- */
+.dark .hero-section .bg-orange-50 {
+  background-color: rgba(251, 146, 60, 0.15) !important;
+}
+
+.dark .hero-section .text-orange-700 {
+  color: #fdba74 !important;
+}
+
+.dark .hero-section .text-orange-600 {
+  color: #fb923c !important;
+}
+
+.dark .hero-section .text-orange-400 {
+  color: #fb923c !important;
+}
+
+.dark .hero-section .border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.dark .hero-section .text-white {
+  color: #ffffff !important;
+}
+
+/* --- Hero Orbs - Orange Glow --- */
+.dark .hero-section .bg-orange-200\/40 {
+  background-color: rgba(251, 146, 60, 0.15) !important;
+}
+
+.dark .hero-section .bg-orange-100\/50 {
+  background-color: rgba(251, 146, 60, 0.10) !important;
+}
+
+.dark .hero-section .bg-orange-100\/30 {
+  background-color: rgba(251, 146, 60, 0.08) !important;
+}
+
+/* --- Trusted Badge --- */
+.dark .trusted-badge {
+  background-color: rgba(251, 146, 60, 0.1) !important;
+  border-color: rgba(251, 146, 60, 0.3) !important;
+  color: #fdba74 !important;
+}
+
+.dark .trusted-badge .bg-orange-500 {
+  background-color: #fb923c !important;
+}
+
+.dark .trusted-badge .animate-ping {
+  background-color: #fb923c !important;
+}
+
+/* --- Global Dark Mode --- */
+.dark .dark\:bg-gray-900 {
+  background-color: #111827 !important;
+}
+
+.dark .dark\:bg-gray-950 {
+  background-color: #030712 !important;
+}
+
+.dark .dark\:bg-gray-800 {
+  background-color: #1f2937 !important;
+}
+
+.dark .dark\:bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .dark\:bg-gray-950\/80 {
+  background-color: rgba(3, 7, 18, 0.8) !important;
+}
+
+.dark .dark\:text-white {
+  color: #ffffff !important;
+}
+
+.dark .dark\:text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.dark .dark\:text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark .dark\:border-gray-800 {
+  border-color: #1f2937 !important;
+}
+
+.dark .dark\:border-gray-700 {
+  border-color: #374151 !important;
+}
+
+.dark .dark\:hover\:bg-gray-800:hover {
+  background-color: #1f2937 !important;
+}
+
+.dark .dark\:hover\:text-white:hover {
+  color: #ffffff !important;
+}
+
+.dark .dark\:shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* --- Gradient Override --- */
+.dark .bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, #0c0a1d, #1a0e1a, #0c0a1d) !important;
+}
+
+.dark .from-gray-50 {
+  --tw-gradient-from: #0c0a1d !important;
+}
+
+.dark .via-orange-50\/30 {
+  --tw-gradient-via: rgba(251, 146, 60, 0.1) !important;
+}
+
+.dark .to-white {
+  --tw-gradient-to: #0c0a1d !important;
+}
+
+/* --- Force Badge Styles --- */
+.dark .bg-orange-50 {
+  background-color: rgba(251, 146, 60, 0.1) !important;
+}
+
+.dark .border-orange-200 {
+  border-color: rgba(251, 146, 60, 0.3) !important;
+}
+
+.dark .text-orange-700 {
+  color: #fdba74 !important;
+}
+
+.dark .text-orange-300 {
+  color: #fdba74 !important;
+}
+
+.dark .bg-orange-500 {
+  background-color: #fb923c !important;
+}
+
+.dark .bg-orange-400 {
+  background-color: #fb923c !important;
+}
+
+/* --- Logo --- */
+.dark .dark\:block {
+  display: block !important;
+}
+
+.dark .dark\:hidden {
+  display: none !important;
+}
