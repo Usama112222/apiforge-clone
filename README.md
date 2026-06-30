@@ -1,16 +1,41 @@
-# React + Vite
+# APIForge Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A complete clone of the APIForge website built with React, Tailwind CSS, and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Demo](https://your-vercel-url.vercel.app)
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI Framework
+- **Tailwind CSS** - Styling
+- **Vite** - Build Tool
+- **React Router** - Routing
+- **Swiper** - Carousel/Slider
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive design
+- Dark/Light mode toggle
+- Interactive components
+- Smooth animations
+- Carousel testimonials
+- FAQ accordion
+- Contact form
+- Back to top button
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Usama112222/apiforge-clone.git
+
+# Navigate to project folder
+cd apiforge-clone
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
